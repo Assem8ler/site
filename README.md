@@ -21,7 +21,6 @@
 
 [+] GitHub:    https://github.com/Assem8ler
 [+] Portfolio: https://assem8ler.github.io/site
-[+] LinkedIn:  [YOUR LINKEDIN URL]
 [+] Email:     assembler998@gmail.com
 
 > ls ./projects
