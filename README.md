@@ -1,37 +1,36 @@
-<!-- ⚠️ Скопируй всё отсюда и вставь в README.md -->
-
 <div align="center">
 
-  <!-- 🎬 Анимированный баннер с эффектом "волны" -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00:0d1117,50:1a1f2e,100:0d1117&height=250&section=header&text=SECURITY_OPERATIONS&fontSize=45&fontAlignY=35&animation=twinkle&fontColor=00FF9D&desc=Penetration+Testing+%7C+Threat+Hunting+%7C+Incident+Response" alt="Animated Header" />
+# SECURITY_OPERATIONS
 
-  <br><br>
+### SOC Analyst | Detection Engineering | Purple Team
 
-  <!-- ⌨️ Эффект печатающегося терминала -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=00FF9D&background=0d111700&center=true&width=500&lines=root@kali:~%24+whoami;security_specialist;root@kali:~%24+cat+skills.txt;Python%2C+Bash%2C+Go%2C+Burp;root@kali:~%24+status;Open+to+work" alt="Terminal Animation" />
+`Wazuh SIEM` · `MITRE ATT&CK` · `Sysmon` · `Windows Server / Linux` · `Bash / PowerShell`
 
 </div>
 
-<br>
+```text
+> whoami
 
-<!-- 🖥️ Блок в стиле "терминал" с рамкой -->
-```bash
-╭──────────────────────────────────────────────────────────────╮
-│  > whoami                                                    │
-│                                                              │
-│  [+] Name:        [Твоё Имя]                                │
-│  [+] Role:        InfoSec Specialist                        │
-│  [+] Location:    [Город, Страна]                           │
-│  [+] Status:      🟢 Available for opportunities            │
-│  [+] Clearance:   Public / [Твой уровень]                   │
-╰──────────────────────────────────────────────────────────────╯
+[+] Name:      [YOUR NAME HERE]
+[+] Role:      SOC Analyst / Detection Engineer
+[+] Focus:     SIEM engineering, Active Directory security, detection rules
+[+] Location:  [Your City, Country]
+[+] Status:    Open to SOC / Detection Engineering positions
 
-╭──────────────────────────────────────────────────────────────╮
-│  > skills --verbose                                          │
-│                                                              │
-│  [✓] Web Security     → OWASP Top 10, Burp Suite, SQLi      │
-│  [✓] Network          → Nmap, Wireshark, MITM               │
-│  [✓] Scripting        → Python, Bash, Go                    │
-│  [✓] Cloud            → AWS, Azure, Docker, K8s             │
-│  [✓] Defense          → SIEM, EDR, Sigma, YARA              │
-╰──────────────────────────────────────────────────────────────╯
+> cat contacts.txt
+
+[+] GitHub:    https://github.com/Assem8ler
+[+] Portfolio: https://assem8ler.github.io/site
+[+] LinkedIn:  [YOUR LINKEDIN URL]
+[+] Email:     [YOUR EMAIL]
+
+> ls ./projects
+
+[+] active-directory-purple-team-lab  -> AD attacks (Kerberoasting, PtH) + custom Wazuh detection rules
+[+] wazuh-siem-fundamentals           -> home SOC lab: SIEM deployment, scan & brute-force detection
+[+] mitre-attack-detection-coverage   -> [IN PROGRESS] 20+ detection rules mapped to MITRE ATT&CK
+
+> ./current_status.sh
+
+[+] Building:  MITRE ATT&CK detection coverage map for Wazuh
+[+] Learning:  Sigma rules, threat hunting methodology
