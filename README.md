@@ -11,10 +11,10 @@
 ```text
 > whoami
 
-[+] Name:      [YOUR NAME HERE]
+[+] Name:      [Nikita]
 [+] Role:      SOC Analyst / Detection Engineer
 [+] Focus:     SIEM engineering, Active Directory security, detection rules
-[+] Location:  [Your City, Country]
+[+] Location:  Russia
 [+] Status:    Open to SOC / Detection Engineering positions
 
 > cat contacts.txt
@@ -22,7 +22,7 @@
 [+] GitHub:    https://github.com/Assem8ler
 [+] Portfolio: https://assem8ler.github.io/site
 [+] LinkedIn:  [YOUR LINKEDIN URL]
-[+] Email:     [YOUR EMAIL]
+[+] Email:     assembler998@gmail.com
 
 > ls ./projects
 
