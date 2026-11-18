@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assem8ler | Cybersecurity Analyst</title>
+    <meta name="description" content="Cybersecurity Analyst specializing in SOC operations, Detection Engineering, and Purple Team methodologies">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .hero .tagline {
+            font-size: 1.5em;
+            opacity: 0.95;
+            margin-bottom: 25px;
+        }
+        
+        .hero .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        /* Sections */
+        .section {
+            background: var(--white);
+            padding: 50px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+            font-size: 1.1em;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .skill-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .skill-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .skill-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .skill-card p {
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+        
+        /* Project Cards */
+        .project-card {
+            background: var(--bg-light);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.15);
+        }
+        
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+        
+        .project-card .tech-stack {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            padding: 14px 28px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero .tagline {
+                font-size: 1.2em;
+            }
+            
+            .section {
+                padding: 30px 20px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Assem8ler</h1>
+            <p class="tagline">Cybersecurity Analyst | SOC & Detection Engineering</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="section">
+            <h2>👋 About Me</h2>
+            <p>I'm a cybersecurity specialist focused on <strong>Security Operations Center (SOC)</strong> operations and <strong>Detection Engineering</strong>. I build practical solutions for threat detection using modern SIEM platforms and industry-standard frameworks.</p>
+            <p>My approach combines offensive security knowledge with defensive operations — understanding how attacks work helps me build better detections.</p>
+            <p><strong>Core Focus Areas:</strong></p>
+            <ul style="margin-left: 20px; color: var(--text-light);">
+                <li>Wazuh SIEM deployment and configuration</li>
+                <li>MITRE ATT&CK framework mapping</li>
+                <li>Purple Team operations</li>
+                <li>Active Directory security</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>🛠️ Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">🛡️</div>
+                    <h3>SIEM & XDR</h3>
+                    <p>Wazuh, ELK Stack, OpenSearch</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">🎯</div>
+                    <h3>Frameworks</h3>
+                    <p>MITRE ATT&CK, Sigma Rules, Kill Chain</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">🖥️</div>
+                    <h3>Operating Systems</h3>
+                    <p>Windows Server, Linux, Kali Linux</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">🔧</div>
+                    <h3>Security Tools</h3>
+                    <p>Sysmon, Atomic Red Team, Impacket</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">📊</div>
+                    <h3>Analysis</h3>
+                    <p>Log Analysis, Threat Hunting, IR</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">🔐</div>
+                    <h3>Offensive Security</h3>
+                    <p>AD Attacks, Network Pentesting</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section" id="projects">
+            <h2>🚀 Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>🎯 MITRE ATT&CK Detection Coverage</h3>
+                <p>Comprehensive detection engineering project with 20+ custom Wazuh detection rules mapped to MITRE ATT&CK techniques. Systematic approach to improving security monitoring coverage.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Wazuh</span>
+                    <span class="tech-tag">MITRE ATT&CK</span>
+                    <span class="tech-tag">Detection Rules</span>
+                    <span class="tech-tag">Sysmon</span>
+                </div>
+                <a href="https://github.com/Assem8ler/mitre-attack-detection-coverage" class="project-link" target="_blank">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🛡️ Active Directory Purple Team Lab</h3>
+                <p>End-to-end Purple Teaming methodology: Red Team executes realistic AD attacks (Kerberoasting, Pass-the-Hash), Blue Team develops custom detection rules in Wazuh SIEM. Full MITRE ATT&CK mapping.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Purple Team</span>
+                    <span class="tech-tag">Active Directory</span>
+                    <span class="tech-tag">Wazuh</span>
+                    <span class="tech-tag">Kerberos</span>
+                </div>
+                <a href="https://github.com/Assem8ler/active-directory-purple-team-lab" class="project-link" target="_blank">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🏠 Wazuh SIEM Fundamentals</h3>
+                <p>Home SOC lab demonstrating SIEM deployment, endpoint monitoring, and baseline attack detection. Includes port scanning and brute force attack scenarios with custom detection rules.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">SOC</span>
+                    <span class="tech-tag">Wazuh</span>
+                    <span class="tech-tag">Network Security</span>
+                    <span class="tech-tag">VirtualBox</span>
+                </div>
+                <a href="https://github.com/Assem8ler/wazuh-siem-fundamentals" class="project-link" target="_blank">View on GitHub →</a>
+            </div>
+        </div>
+
+        <!-- Experience/Timeline -->
+        <div class="section">
+            <h2>📈 My Journey</h2>
+            <p><strong>Current Focus:</strong> Building comprehensive detection coverage using MITRE ATT&CK framework and developing advanced Purple Team scenarios.</p>
+            <p><strong>Learning Path:</strong></p>
+            <ul style="margin-left: 20px; color: var(--text-light);">
+                <li>SOC fundamentals and SIEM deployment</li>
+                <li>Active Directory security and attacks</li>
+                <li>Detection engineering and rule development</li>
+                <li>MITRE ATT&CK framework deep dive</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="section" id="contact">
+            <h2>📫 Get In Touch</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Interested in collaboration or job opportunities? Let's connect!</p>
+            <div class="contact-links">
+                <a href="https://github.com/Assem8ler" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Assem8ler | Cybersecurity Analyst | Built with ❤️ and GitHub Pages</p>
+        </footer>
+    </div>
+</body>
+</html>
