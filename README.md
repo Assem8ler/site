@@ -11,7 +11,7 @@
 ```text
 > whoami
 
-[+] Name:      [Nikita]
+[+] Name:      Nikita
 [+] Role:      SOC Analyst / Detection Engineer
 [+] Focus:     SIEM engineering, Active Directory security, detection rules
 [+] Location:  Russia
